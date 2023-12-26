@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introMainFragment">
+
+    <fragment
+        android:id="@+id/introMainFragment"
+        android:name="com.example.restaurant_project.IntroMainFragment"
+        android:label="fragment_intro_main"
+        tools:layout="@layout/fragment_intro_main" >
+        <action
+            android:id="@+id/action_introMainFragment_to_registerMainFragment"
+            app:destination="@id/registerMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerMainFragment"
+        android:name="com.example.restaurant_project.RegisterMainFragment"
+        android:label="RegisterMainFragment"
+        tools:layout="@layout/fragment_register_main"/>
+</navigation>
